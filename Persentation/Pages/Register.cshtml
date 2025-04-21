@@ -1,0 +1,26 @@
+﻿@page
+@model RegisterModel
+@{
+}
+<h3>Register</h3>
+<div class="container">
+    <form method="post">
+        <div class="row p-1">
+            <div class="col-1">NickName</div>
+            <div class="col-5"><input type="text" class="w-100" asp-for="RegisterRequest.NickName" /></div>
+        </div>
+        <div class="row p-1">
+            <div class="col-1">Email</div>
+            <div class="col-5"><input type="text" class="w-100" asp-for="RegisterRequest.Email" /></div>
+        </div>
+        <div class="row p-1">
+            <div class="col-1">Password</div>
+            <div class="col-5"><input type="password" class="w-100" asp-for="RegisterRequest.Password" /></div>
+        </div>
+        <div class="row p-1">
+            <div class="col-6 text-end">
+                <input type="submit" value="Register" />
+            </div>
+        </div>
+    </form>
+</div>
